@@ -7,7 +7,7 @@
     
  */
 // domain='http://wechat.doonsec.com'
-domain = 'http://127.0.0.1:8000/'
+domain = 'http://127.0.0.1:7001/'
 api_version = 'api/v1/'
 api_url = domain + api_version
 layui.define(['laytpl', 'layer', 'element', 'util'], function (exports) {
