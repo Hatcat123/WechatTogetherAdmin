@@ -47,6 +47,12 @@ server {
            index  .\start\index.html index.html index.htm;
        }
     }
+
+
+             location /adminpro/{
+              root /home/all/WechatTogetherAdmin;
+              index ./start/index.html;
+}
 ```
 
 
