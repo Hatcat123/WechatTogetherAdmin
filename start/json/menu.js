@@ -310,11 +310,6 @@
           "name": "community_account_list"
           , "title": "社区公众号"
           , "jump": "wechat/community_account_list"
-        },
-        {
-          "name": "workorder"
-          , "title": "工单系统"
-          , "jump": "app/workorder/list"
         }]
       },{
         "name": "app"

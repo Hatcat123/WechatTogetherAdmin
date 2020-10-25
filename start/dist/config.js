@@ -7,7 +7,7 @@
     
  */
 // domain='http://wechat.doonsec.com'
-domain = 'http://127.0.0.1:7001/'
+domain = 'http://127.0.0.1:8000/'
 api_version = 'api/v1/'
 api_url = domain + api_version
 layui.define(['laytpl', 'layer', 'element', 'util'], function (exports) {
@@ -91,7 +91,11 @@ layui.define(['laytpl', 'layer', 'element', 'util'], function (exports) {
     //主题配置
     , theme: {
       //内置主题配色方案
-      color: [{
+      color: [ {
+        logo: '#226A62'
+        , header: '#2F9688'
+        , alias: 'green-header' //墨绿头
+      },{
         main: '#20222A' //主题色
         , selected: '#009688' //选中色
         , alias: 'default' //默认别名

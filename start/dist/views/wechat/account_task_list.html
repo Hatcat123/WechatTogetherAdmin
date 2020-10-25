@@ -32,7 +32,7 @@
         <button class="layui-btn layuiadmin-btn-list" data-type="batchdel">删除</button>
         <button class="layui-btn layuiadmin-btn-list" data-type="add">添加</button>
       </div>
-      <table id="LAY-wechat-account-list" lay-filter="LAY-wechat-account-list"></table>
+      <table id="LAY-wechat-account-task-list" lay-filter="LAY-wechat-account-task-list"></table>
       <script type="text/html" id="buttonTpl">
           {{#  if(d.status){ }}
             <button class="layui-btn layui-btn-xs">已发布</button>
@@ -49,7 +49,7 @@
 </div>
 
 <script>
-  layui.use('account', layui.factory('contlist')).use(['admin', 'contlist', 'table', 'laydate'], function () {
+  layui.use('account_task', layui.factory('account_task')).use(['admin', 'account_task', 'table', 'laydate'], function () {
     var $ = layui.$
       , admin = layui.admin
       , view = layui.view
@@ -71,14 +71,14 @@
       var field = data.field;
 
       //执行重载
-      table.reload('LAY-wechat-account-list', {
+      table.reload('LAY-wechat-account-task-list', {
         where: field
       });
     });
 
     var active = {
       batchdel: function () {
-        var checkStatus = table.checkStatus('LAY-wechat-account-list')
+        var checkStatus = table.checkStatus('LAY-wechat-account-task-list')
           , checkData = checkStatus.data; //得到选中的数据
 
         if (checkData.length === 0) {
@@ -94,7 +94,7 @@
             //,……
           });
           */
-          table.reload('LAY-wechat-account-list');
+          table.reload('LAY-wechat-account-task-list');
           layer.msg('已删除');
         });
       }
