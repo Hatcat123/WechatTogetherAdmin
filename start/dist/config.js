@@ -69,8 +69,27 @@ layui.define(['laytpl', 'layer', 'element', 'util'], function (exports) {
       api_community_account_list: api_url + 'community_account_list/',
 
       //用户接口
+      //用户日志展示
+      api_user_log_list: api_url + 'user_log_list/',
+      //热门搜索
+      api_hot_search_list: api_url + 'hot_search_list/',
+      // 黑名单
+      api_block_ip_list: api_url + 'block_ip_list/',
+      //留言板
+      api_msg_board_list: api_url + 'msg_board_list/',
+
 
       //设置接口
+
+      // 轮播图展示
+
+      //公告展示
+
+      // 监控
+
+      // 系统配置
+
+
     }
 
 

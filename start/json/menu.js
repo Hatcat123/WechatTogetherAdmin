@@ -375,14 +375,30 @@
         , "title": "用户"
         , "icon": "layui-icon-user"
         , "list": [{
-          "name": "user"
+          "name": "user-list"
           , "title": "网站用户"
           , "jump": "user/user/list"
         }, {
+          "name": "user-log-list"
+          , "title": "用户日志"
+          , "jump": "user/user/user_log_list"
+        }, {
+          "name": "hot-search-list"
+          , "title": "热门搜索"
+          , "jump": "user/user/hot_search_list"
+        }, {
+          "name": "block-ip-list"
+          , "title": "黑名单"
+          , "jump": "user/user/block_ip_list"
+        }, {
+          "name": "msg-board-list"
+          , "title": "留言板"
+          , "jump": "user/user/msg_board_list"
+        },  {
           "name": "administrators-list"
           , "title": "后台管理员"
           , "jump": "user/administrators/list"
-        }, {
+        },{
           "name": "administrators-rule"
           , "title": "角色管理"
           , "jump": "user/administrators/role"
