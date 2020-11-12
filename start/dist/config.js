@@ -52,14 +52,22 @@ layui.define(['laytpl', 'layer', 'element', 'util'], function (exports) {
     , domain: {
       api_domain: api_url,
       api_captcha: domain + 'c/captcha/',
-      
+
       //登录接口
       api_login: api_url + 'login/',
-      
+
+      //主页接口数据
+
+      api_count: api_url + 'count/',
+      api_system_info: api_url + 'system_info/',
+      api_top_search: api_url + 'top_search/',
+      api_top_article: api_url + 'top_article/',
+      api_log_visitor_echarts: api_url + 'log_visitor_echarts/',
+
       // 文章接口
       api_article_list: api_url + 'article_list/',
       api_article_list_flag: api_url + 'article_flag',
-      
+
       // 分类接口
       api_tag_list: api_url + 'tag_list/',
 
@@ -77,7 +85,8 @@ layui.define(['laytpl', 'layer', 'element', 'util'], function (exports) {
       api_block_ip_list: api_url + 'block_ip_list/',
       //留言板
       api_msg_board_list: api_url + 'msg_board_list/',
-
+      // 邮件收件人
+      api_email_user_list: api_url + 'email_user_list/',
 
       //设置接口
 
@@ -88,8 +97,8 @@ layui.define(['laytpl', 'layer', 'element', 'util'], function (exports) {
       // 监控
 
       // 系统配置
-
-
+      api_email_show: api_url + 'email_show/',
+      api_email_edit: api_url + 'email_edit/',
     }
 
 
@@ -110,11 +119,11 @@ layui.define(['laytpl', 'layer', 'element', 'util'], function (exports) {
     //主题配置
     , theme: {
       //内置主题配色方案
-      color: [ {
+      color: [{
         logo: '#226A62'
         , header: '#2F9688'
         , alias: 'green-header' //墨绿头
-      },{
+      }, {
         main: '#20222A' //主题色
         , selected: '#009688' //选中色
         , alias: 'default' //默认别名

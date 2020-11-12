@@ -394,7 +394,11 @@
           "name": "msg-board-list"
           , "title": "留言板"
           , "jump": "user/user/msg_board_list"
-        },  {
+        }, {
+          "name": "email-user-list"
+          , "title": "邮箱收件人"
+          , "jump": "user/user/email_user_list"
+        }, {
           "name": "administrators-list"
           , "title": "后台管理员"
           , "jump": "user/administrators/list"
